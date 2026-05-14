@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# dbt
+weather_pipeline/target/
+weather_pipeline/dbt_packages/
+weather_pipeline/logs/
+
+# Airflow
+airflow/logs/
+airflow/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive — NEVER push these
+*.env
+secrets.yml

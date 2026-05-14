@@ -1,0 +1,12 @@
+weather_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: host.docker.internal
+      user: postgres
+      password: admin123
+      port: 5433
+      dbname: weather_db
+      schema: public
+      threads: 4

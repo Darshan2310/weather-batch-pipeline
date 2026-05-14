@@ -1,0 +1,17 @@
+2026-05-13 11:43:19,627  INFO  ========== Pipeline started ==========
+2026-05-13 11:45:36,028  INFO  ========== Pipeline started ==========
+2026-05-13 11:45:37,092  INFO  Connected to weather_db
+2026-05-13 11:45:37,171  INFO  Table raw_weather is ready
+2026-05-13 11:45:37,171  INFO  Fetching weather for Bhadravati ...
+2026-05-13 11:45:38,207  INFO  Got response for Bhadravati — status 200
+2026-05-13 11:45:38,227  INFO  Parsed 168 rows for Bhadravati
+2026-05-13 11:45:38,286  INFO  Inserted 168 rows into raw_weather
+2026-05-13 11:45:38,286  INFO  Fetching weather for Mumbai ...
+2026-05-13 11:45:39,402  INFO  Got response for Mumbai — status 200
+2026-05-13 11:45:39,419  INFO  Parsed 168 rows for Mumbai
+2026-05-13 11:45:39,481  INFO  Inserted 168 rows into raw_weather
+2026-05-13 11:45:39,564  INFO  Fetching weather for Pune ...
+2026-05-13 11:45:40,625  INFO  Got response for Pune — status 200
+2026-05-13 11:45:40,625  INFO  Parsed 168 rows for Pune
+2026-05-13 11:45:40,690  INFO  Inserted 168 rows into raw_weather
+2026-05-13 11:45:40,690  INFO  ========== Pipeline finished ==========

@@ -1,0 +1,234 @@
+[0m12:12:34.931023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF733ACB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF86BC490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF86BC280>]}
+
+
+============================== 12:12:34.970518 | 1e90eaee-ac8e-4e83-9048-c3caf0f7b7ea ==============================
+[0m12:12:34.970518 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:12:34.972639 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt init weather_pipeline', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:12:35.311408 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\HP\.dbt
+[0m12:12:35.353040 [debug] [MainThread]: Starter project path: D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\include\starter_project
+[0m12:12:35.381549 [info ] [MainThread]: 
+Your new dbt project "weather_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:12:35.385840 [info ] [MainThread]: Setting up your profile.
+[0m12:14:59.619431 [error] [MainThread]: Encountered an error:
+
+[0m12:15:00.011282 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\cli\main.py", line 488, in init
+    results = task.run()
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\click\termui.py", line 179, in prompt
+    value = prompt_func(prompt)
+  File "D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\click\termui.py", line 162, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m12:15:00.016370 [debug] [MainThread]: Command `dbt init` failed at 12:15:00.016370 after 145.19 seconds
+[0m12:15:00.017698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF733ACB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF87DB160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF87DA6E0>]}
+[0m12:15:00.017698 [debug] [MainThread]: Flushing usage events
+[0m12:15:01.243290 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:15:06.911611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E8702ADA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E883AC490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E883AC220>]}
+
+
+============================== 12:15:06.916461 | 74b17b51-90d7-4b4d-97a0-516f37c683a1 ==============================
+[0m12:15:06.916461 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:15:06.918411 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init weather_pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:15:06.947769 [info ] [MainThread]: A project called weather_pipeline already exists here.
+[0m12:15:06.949802 [debug] [MainThread]: Command `dbt init` succeeded at 12:15:06.949802 after 0.13 seconds
+[0m12:15:06.951191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E8702ADA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E883AC490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E883ACB20>]}
+[0m12:15:06.952714 [debug] [MainThread]: Flushing usage events
+[0m12:15:08.083906 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:15:22.103103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DFA526DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DFB8AC490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DFB8AC220>]}
+
+
+============================== 12:15:22.107553 | fab3de79-9d6f-479c-94a1-42387b061259 ==============================
+[0m12:15:22.107553 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:15:22.107553 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt init weather_pipeline', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:15:22.123659 [debug] [MainThread]: Starter project path: D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\include\starter_project
+[0m12:15:22.155432 [info ] [MainThread]: 
+Your new dbt project "weather_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:15:22.155432 [info ] [MainThread]: Setting up your profile.
+[0m12:17:51.519399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E904A16E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E905D9C3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E905D9C130>]}
+
+
+============================== 12:17:51.528483 | 5ff2f51c-062d-4441-8010-3228af4deb13 ==============================
+[0m12:17:51.528483 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:17:51.528483 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init weather_pipeline', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:17:51.559597 [debug] [MainThread]: Starter project path: D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\lib\site-packages\dbt\include\starter_project
+[0m12:17:51.947054 [info ] [MainThread]: 
+Your new dbt project "weather_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:17:51.948150 [info ] [MainThread]: Setting up your profile.
+[0m12:18:27.156172 [info ] [MainThread]: Profile weather_pipeline written to C:\Users\HP\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:18:27.156172 [debug] [MainThread]: Command `dbt init` succeeded at 12:18:27.156172 after 35.73 seconds
+[0m12:18:27.161128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E904A16E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E905D77C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E905E90520>]}
+[0m12:18:27.163127 [debug] [MainThread]: Flushing usage events
+[0m12:18:28.299946 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:19:14.500430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E37AAD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E4B2C4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E4B2C280>]}
+
+
+============================== 12:19:14.502947 | 66b42d8c-3d1b-40b6-b388-aceeeca5ae08 ==============================
+[0m12:19:14.502947 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:19:14.507360 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:19:14.579252 [info ] [MainThread]: dbt version: 1.11.9
+[0m12:19:14.579252 [info ] [MainThread]: python version: 3.10.11
+[0m12:19:14.579252 [info ] [MainThread]: python path: D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\Scripts\python.exe
+[0m12:19:14.579252 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m12:19:14.667711 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m12:19:14.674570 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m12:19:14.674570 [info ] [MainThread]: Using dbt_project.yml file at D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\dbt_project.yml
+[0m12:19:14.674570 [info ] [MainThread]: adapter type: postgres
+[0m12:19:14.674570 [info ] [MainThread]: adapter version: 1.10.0
+[0m12:19:14.681477 [info ] [MainThread]: Configuration:
+[0m12:19:14.681477 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:19:14.681477 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:19:14.681477 [info ] [MainThread]: Required dependencies:
+[0m12:19:14.681477 [debug] [MainThread]: Executing "git --help"
+[0m12:19:14.765488 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:19:14.765488 [debug] [MainThread]: STDERR: "b''"
+[0m12:19:14.772023 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:19:14.772023 [info ] [MainThread]: Connection:
+[0m12:19:14.774475 [info ] [MainThread]:   host: localhost
+[0m12:19:14.774475 [info ] [MainThread]:   port: 5433
+[0m12:19:14.777975 [info ] [MainThread]:   user: postgres
+[0m12:19:14.779988 [info ] [MainThread]:   database: weather_db
+[0m12:19:14.779988 [info ] [MainThread]:   schema: public
+[0m12:19:14.779988 [info ] [MainThread]:   connect_timeout: 10
+[0m12:19:14.786242 [info ] [MainThread]:   role: None
+[0m12:19:14.786242 [info ] [MainThread]:   search_path: None
+[0m12:19:14.786242 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:19:14.786242 [info ] [MainThread]:   sslmode: None
+[0m12:19:14.792978 [info ] [MainThread]:   sslcert: None
+[0m12:19:14.797399 [info ] [MainThread]:   sslkey: None
+[0m12:19:14.799883 [info ] [MainThread]:   sslrootcert: None
+[0m12:19:14.801628 [info ] [MainThread]:   application_name: dbt
+[0m12:19:14.805772 [info ] [MainThread]:   retries: 1
+[0m12:19:14.809169 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m12:19:16.352821 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:19:17.201112 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:19:17.201112 [debug] [MainThread]: On debug: select 1 as id
+[0m12:19:17.201112 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:19:17.960517 [debug] [MainThread]: SQL status: SELECT 1 in 0.755 seconds
+[0m12:19:17.966807 [debug] [MainThread]: On debug: Close
+[0m12:19:17.971085 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:19:17.973890 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:19:17.977362 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\dbt_project.yml> not found
+
+[0m12:19:17.988321 [debug] [MainThread]: Command `dbt debug` failed at 12:19:17.988321 after 3.70 seconds
+[0m12:19:17.994346 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:19:17.994346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E37AAD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E4AA2B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E4AA3AC0>]}
+[0m12:19:18.001382 [debug] [MainThread]: Flushing usage events
+[0m12:19:19.184933 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:19:43.485372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B525BFAD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B526F7C3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B526F7C1C0>]}
+
+
+============================== 12:19:43.487103 | d7dbf209-a197-401e-aa8e-f9a4f470da58 ==============================
+[0m12:19:43.487103 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:19:43.491380 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:19:43.514508 [info ] [MainThread]: dbt version: 1.11.9
+[0m12:19:43.520221 [info ] [MainThread]: python version: 3.10.11
+[0m12:19:43.521215 [info ] [MainThread]: python path: D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\venv\Scripts\python.exe
+[0m12:19:43.522007 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m12:19:43.591387 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m12:19:43.591387 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m12:19:43.591387 [info ] [MainThread]: Using dbt_project.yml file at D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\dbt_project.yml
+[0m12:19:43.596877 [info ] [MainThread]: adapter type: postgres
+[0m12:19:43.597881 [info ] [MainThread]: adapter version: 1.10.0
+[0m12:19:43.598724 [info ] [MainThread]: Configuration:
+[0m12:19:43.598724 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:19:43.602397 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:19:43.602966 [info ] [MainThread]: Required dependencies:
+[0m12:19:43.602966 [debug] [MainThread]: Executing "git --help"
+[0m12:19:43.671701 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:19:43.672659 [debug] [MainThread]: STDERR: "b''"
+[0m12:19:43.672659 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:19:43.674666 [info ] [MainThread]: Connection:
+[0m12:19:43.674666 [info ] [MainThread]:   host: localhost
+[0m12:19:43.674666 [info ] [MainThread]:   port: 5433
+[0m12:19:43.674666 [info ] [MainThread]:   user: postgres
+[0m12:19:43.679316 [info ] [MainThread]:   database: weather_db
+[0m12:19:43.679316 [info ] [MainThread]:   schema: public
+[0m12:19:43.679316 [info ] [MainThread]:   connect_timeout: 10
+[0m12:19:43.679316 [info ] [MainThread]:   role: None
+[0m12:19:43.679316 [info ] [MainThread]:   search_path: None
+[0m12:19:43.679316 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:19:43.679316 [info ] [MainThread]:   sslmode: None
+[0m12:19:43.679316 [info ] [MainThread]:   sslcert: None
+[0m12:19:43.685937 [info ] [MainThread]:   sslkey: None
+[0m12:19:43.687154 [info ] [MainThread]:   sslrootcert: None
+[0m12:19:43.687154 [info ] [MainThread]:   application_name: dbt
+[0m12:19:43.689161 [info ] [MainThread]:   retries: 1
+[0m12:19:43.689161 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m12:19:44.318664 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:19:44.473308 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:19:44.473308 [debug] [MainThread]: On debug: select 1 as id
+[0m12:19:44.477241 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:19:44.727125 [debug] [MainThread]: SQL status: SELECT 1 in 0.256 seconds
+[0m12:19:44.733793 [debug] [MainThread]: On debug: Close
+[0m12:19:44.733793 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:19:44.733793 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:19:44.740160 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\BITS\Sem 4\Practical Projects\End to end Batch Pipeline with Public APIs\dbt_project.yml> not found
+
+[0m12:19:44.742641 [debug] [MainThread]: Command `dbt debug` failed at 12:19:44.740640 after 1.36 seconds
+[0m12:19:44.742641 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:19:44.742641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B525BFAD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B526EF0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B526EF3DC0>]}
+[0m12:19:44.744649 [debug] [MainThread]: Flushing usage events
+[0m12:19:45.863798 [debug] [MainThread]: An error was encountered while trying to flush usage events

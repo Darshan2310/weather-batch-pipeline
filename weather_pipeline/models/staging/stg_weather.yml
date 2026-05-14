@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_weather
+    description: "Cleaned and renamed weather data from Open-Meteo API"
+    columns:
+      - name: weather_id
+        description: "Unique row identifier"
+        tests:
+          - unique
+          - not_null
+
+      - name: city_name
+        description: "Name of the city"
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - 'Bhadravati'
+                - 'Mumbai'
+                - 'Pune'
+
+      - name: temperature_c
+        description: "Air temperature in Celsius"
+        tests:
+          - not_null
